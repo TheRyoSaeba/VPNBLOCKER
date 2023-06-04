@@ -1,10 +1,10 @@
-# CloudflareVPNBlocker
+# VPNCloudflareBlock
 
-CloudflareVpnBlocker is a Cloudflare Worker script that helps you block VPNs and proxies from accessing your domain. By utilizing the Makimura.js Cloudflare worker script and configuring the Cloudflare Web Application Firewall (WAF), you can effectively block a vast majority of VPN and proxy traffic from reaching your site.
+VPNCloudflareBlock is a Cloudflare Worker script that helps you block VPNs and proxies from accessing your domain. By utilizing the Makimura.js Cloudflare worker script and configuring the Cloudflare Web Application Firewall (WAF), you can effectively block a vast majority of VPN and proxy traffic from reaching your site.
 
 ## Usage
 
-Follow the steps below to set up CloudflareVPNBlocker for your domain:
+Follow the steps below to set up VPNCloudflareBlock for your domain:
 
 1. Copy the contents of the [Makimura.js](Makimura.js) file.
 
@@ -22,11 +22,11 @@ Follow the steps below to set up CloudflareVPNBlocker for your domain:
 
 8. Route the Cloudflare Worker you created in step 4 to your domain.
 
-With these steps completed, the CloudflareVPNBlocker  setup is in place, and it will work to block the majority of VPN and proxy traffic from accessing your site.
+With these steps completed, the VPNCloudflareBlock setup is in place, and it will work to block the majority of VPN and proxy traffic from accessing your site.
 
 ## Disclaimer
 
-It's important to note that while CloudflareVPNBlocker  can be effective in blocking VPNs and proxies, it may not catch all of them. Some determined users may still find ways to bypass these restrictions. Additionally, legitimate users who utilize VPNs for privacy or security reasons may also be affected. Please use this script responsibly and consider the impact on your users.
+It's important to note that while VPNCloudflareBlock can be effective in blocking VPNs and proxies, it may not catch all of them. Some determined users may still find ways to bypass these restrictions. Additionally, legitimate users who utilize VPNs for privacy or security reasons may also be affected. Please use this script responsibly and consider the impact on your users.
 
 ## License
 
@@ -36,14 +36,15 @@ Feel free to contribute, open issues, or submit pull requests to enhance the fun
 
 ## Credits
 
-CloudflareVPNBlocker(makimura.js)  was created by  me, but the list is part of it and i just compiled those. 
+I created  [Makimura](https://github.com/makimurax13).
 
 ## Acknowledgments
 
-The blocklist is taken from a bunch of repositories 
-https://github.com/LorenzoSapora/bad-asn-list
-https://github.com/tsoxas/BadASNs/blob/main/ASN.txt
-https://github.com/enigma550/ASN-List
-https://github.com/NullifiedCode/ASN-Lists
-I'm sure there's more, Thanks to all of them. 
+The block list is taken from a bunch of repositories : 
 
+- [LorenzoSapora/bad-asn-list](https://github.com/LorenzoSapora/bad-asn-list)
+- [tsoxas/BadASNs](https://github.com/tsoxas/BadASNs/blob/main/ASN.txt)
+- [enigma550/ASN-List](https://github.com/enigma550/ASN-List)
+- [NullifiedCode/ASN-Lists](https://github.com/NullifiedCode/ASN-Lists)
+
+I'm sure there's more, thanks to all of them.
