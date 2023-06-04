@@ -1,5 +1,4 @@
 # VPNCloudflareBlock
-# VPNCloudflareBlock
 
 VPNCloudflareBlock is a Cloudflare Worker script that helps you block VPNs and proxies from accessing your domain. By utilizing the Makimura.js Cloudflare worker script and configuring the Cloudflare Web Application Firewall (WAF), you can effectively block a vast majority of VPN and proxy traffic from reaching your site.
 
@@ -41,5 +40,10 @@ VPNCloudflareBlock was created by [Your Name] and is based on the Makimura.js sc
 
 ## Acknowledgments
 
-Special thanks to the Cloudflare team for their excellent services and support in developing this VPN blocking solution.
+The blocklist is taken from a bunch of repositories 
+https://github.com/LorenzoSapora/bad-asn-list
+https://github.com/tsoxas/BadASNs/blob/main/ASN.txt
+https://github.com/enigma550/ASN-List
+https://github.com/NullifiedCode/ASN-Lists
+I'm sure there's more, Thanks to all of them. 
 
