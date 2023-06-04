@@ -6,7 +6,7 @@ VPNCloudflareBlock is a Cloudflare Worker script that helps you block VPNs and p
 
 Follow the steps below to set up VPNCloudflareBlock for your domain:
 
-1. Copy the contents of the [Makimura.js](makimura.js) file.
+1. Copy the contents of the [Makimura.js](Makimura.js) file.
 
 2. Go to your Cloudflare dashboard and navigate to the Workers section.
 
