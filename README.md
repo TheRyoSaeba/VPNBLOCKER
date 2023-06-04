@@ -17,7 +17,7 @@ Follow the steps below to set up VPNCloudflareBlock for your domain:
 
 5. In the Cloudflare dashboard, go to the "Security" section and select "WAF".
 
-6. Create a new rule and set the condition to "country equal to Tor" or "(ip.geoip.country eq 'T1')". This rule will help identify VPN and proxy traffic based on the associated countries.
+6. Create a new rule and set the condition to "country equal to Tor" or "(ip.geoip.country eq 'T1')". This should block Tor.
 
 7. Save the WAF rule and make sure it is enabled.
 
