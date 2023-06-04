@@ -21,12 +21,11 @@ async function fetchBlocklistAndSVG() {
 async function handleRequest(request) {
   await fetchBlocklistAndSVG();
   try {
-    // Log blocklist to console
-    console.log(blocklist);
+     
     const ip = request.headers.get('cf-connecting-ip');
     const cfRay = request.headers.get('cf-ray')
     const country = request.headers.get('cf-ipCountry');
-     console.log(country)
+      
     // Fetch ASN for the IP
     const asnResponse = await fetch('https://traceroute-online.com/query', {
       method: 'POST',
@@ -42,8 +41,8 @@ async function handleRequest(request) {
     const responseText = await asnResponse.text();
 
     if (responseText.includes('API count exceeded')) {
-      // If API quota exceeded, return the original request
-      return fetch(request);
+      // If API quota exceeded, restart request handling
+      return handleRequest(request);
     }
     addEventListener('fetch', event => {
       event.respondWith(handleRequest(event.request));
@@ -125,14 +124,21 @@ async function handleRequest(request) {
           'Content-Type': 'text/html',
         },
       });
+       // Redirect subdirectory requests to the root page
+if (response.status === 403 && new URL(request.url).pathname !== '/') {
+  const rootDomain = new URL(request.url).origin;
+  return Response.redirect(rootDomain, 302);
+}
 
       return response;
-    }
-
+    } 
+      
     return fetch(request);
+    
   } catch (e) {
     console.error(e);
     // If an exception is thrown, return the original request
-    return fetch(request);
+    return handleRequest(request);
   }
 }
+
