@@ -36,7 +36,7 @@ Feel free to contribute, open issues, or submit pull requests to enhance the fun
 
 ## Credits
 
-I created  [Makimura](https://github.com/makimurax13).
+I created  the  [Makimura.js Script ](https://github.com/TheRyoSaeba), but the script is only part of it .
 
 ## Acknowledgments
 
