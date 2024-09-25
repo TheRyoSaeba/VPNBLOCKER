@@ -22,8 +22,7 @@ addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request));
 });
 
-let blocklist;
-let svgText = "";
+
 
 async function fetchBlocklistAndSVG() {
   const cache = caches.default;
