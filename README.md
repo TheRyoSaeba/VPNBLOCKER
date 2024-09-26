@@ -1,6 +1,6 @@
-# VPNCloudflareBlock
+#VPNCloudflareBlock
 
-VPNCloudflareBlock is a Cloudflare Worker script that helps you block VPNs and proxies from accessing your domain. By utilizing the Makimura.js Cloudflare worker script and configuring the Cloudflare Web Application Firewall (WAF), you can effectively block a vast majority of VPN and proxy traffic from reaching your site.
+should block most vpns / datacenters from accessing your site , you can  just edit out the error image or text if you dont want ot
 
 ## Usage
 
@@ -25,8 +25,7 @@ Follow the steps below to set up VPNCloudflareBlock for your domain:
 With these steps completed, the VPNCloudflareBlock setup is in place, and it will work to block the majority of VPN and proxy traffic from accessing your site.
 
 ## Disclaimer
-
-It's important to note that while VPNCloudflareBlock can be effective in blocking VPNs and proxies, it may not catch all of them. Some determined users may still find ways to bypass these restrictions. Additionally, legitimate users who utilize VPNs for privacy or security reasons may also be affected. Please use this script responsibly and consider the impact on your users.
+wont block all but should be plenty for most people 
 
 ## License
 
